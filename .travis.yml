@@ -14,8 +14,7 @@ cache:
 install:
 
 before_script:
-  - echo $TRAVIS_BUILD_DIR/
-  - $TRAVIS_BUILD_DIR/npm-audit-practice/audit/audit-no-exit-code.sh
+  - $TRAVIS_BUILD_DIR/audit/audit-no-exit-code.sh
 
 script:
   - npm run audit:process
