@@ -1,1 +1,1 @@
-npm audit --json >> ./audit/report.json
+npm audit --json >> ./audit/report.json || true
