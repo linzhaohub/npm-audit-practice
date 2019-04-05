@@ -1,4 +1,3 @@
-const fs = require("fs");
 const shell = require("shelljs");
 const _ = require("lodash");
 
@@ -37,8 +36,3 @@ if (findings.length > 0) {
   shell.exec("rm -rf report.json");
   shell.exit(0);
 }
-// searching for dev=false
-
-// exit code 0 if not find or 1 if find dev=false
-
-// brief report if find dev=false

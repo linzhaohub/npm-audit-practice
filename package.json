@@ -18,8 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "audit": "./audit/audit-no-exit-code.sh",
-    "audit:process": "node ./audit/audit-process.js",
-    "audit:analysis": "npm run audit && npm run audit:process"
+    "audit:process": "node ./audit/audit-process.js"
   },
   "eslintConfig": {
     "extends": "react-app"
