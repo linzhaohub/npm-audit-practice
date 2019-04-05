@@ -1,1 +1,0 @@
-npm audit --json >> ./audit/report.json || true
