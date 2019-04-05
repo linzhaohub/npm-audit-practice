@@ -1,0 +1,1 @@
+npm audit --json --audit-level critical >> ./audit/report.json

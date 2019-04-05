@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "10"
+
+dist: trusty
+sudo: false
+addons:
+  chrome: stable
+
+cache:
+  directories:
+    - $HOME/.npm
+
+install:
+  - npm run build
+
+before_script:
+  - npm audit --json >> ./audit/report.json
+
+script:
+  - npm run audit:process
